@@ -5,11 +5,12 @@ import PackageDescription
 let package = Package(
   name: "CryptoSwift",
   platforms: [
-    .macOS(.v10_10), .iOS(.v8), .tvOS(.v9)
+    .macOS(.v10_12), .iOS(.v12)
   ],
   products: [
     .library(
       name: "CryptoSwift",
+        type: .dynamic,
       targets: ["CryptoSwift"]
     )
   ],
